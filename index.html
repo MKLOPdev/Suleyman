@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suleyman ProPic</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff5f55, #ffbd59);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        h4 {
+            color: #ffffff;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 270px;
+            height: 480px;
+            border-radius: 5%;
+            margin: 0 auto;
+        }
+
+
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+ button {
+  background: #ffbd59;
+  color: #ffffff;
+  padding: 10px 130px;
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: right;
+}
+
+        .dropdown {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            background: #ffbd59;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background: #ffbd59;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #ffffff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ff5f55;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+    </style>
+</head>
+<body>
+    <h1>Suleyman ProPic</h1>
+    <h2>Hi Guys, I'am MKLOP PROGRAMMER Known as Suleyman Muktar,  <br>You can Contact me with my Telegram account, Click On The Image Below To see My Telegram Account.</h2>
+   <fieldset> <h2>I am </h2>
+    <ul>  
+        <li>Web Developer</li>  
+        <li>AI Developer</li>  
+        <li>Apk Modder</li>  
+        <li>Software Enginer</li>  </fieldset>
+    </ul>  
+    <fieldset style="width: 150px">
+        <legend><strong>My picture</strong></legend>
+        <img class="profile-picture" src="mp1.png" alt="MKLOP_PROGRAMMER/Suleyman muktar profile picture" />
+        <br>
+        <b>
+This is me Suleyman Muktar </b>
+    </fieldset>
+
+    <div class="dropdown">
+        <button style="background: #6bb1b8">Menu :</button>
+        <div class="dropdown-content">
+            <a href="Sign-in.html">Sign in</a>
+            <a href="https://t.me/MKLOP_PROGRAMMER">Telegram Account</a>
+        </div>
+    </div>
+
+    <script>
+        // Add a click event listener to the button
+        document.querySelector(".dropdown button").addEventListener("click", function() {
+            // When the button is clicked, toggle the visibility of the dropdown content
+            document.querySelector(".dropdown-content").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
