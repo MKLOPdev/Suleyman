@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Suleyman ProPic</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="icon.png">
     <style>
         body {
             background: linear-gradient(to right, #ff5f55, #ffbd59);
@@ -45,9 +45,9 @@
  button {
   background: #ffbd59;
   color: #ffffff;
-  padding: 10px 130px;
+  padding: 10px 30px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
 
   cursor: pointer;
 
@@ -61,10 +61,11 @@
             left: 0;
             width: 100%;
             z-index: 1;
-            background: #ffbd59;
+            background: none;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: right;
+            align-items: right;                    
+
         }
 
         .dropdown-content {
@@ -89,17 +90,33 @@
         .dropdown-content a:hover {background-color: #ff5f55;}
 
         .dropdown:hover .dropdown-content {display: block;}
+        .made {
+            background:rgb(200,0,0);
+            border-style:solid;
+            border-radius: 10px;
+            height: 36px;
+            width:200px;
+            color:white;            
+        }
+        .made:hover {
+            opacity:0.7 ;
+            box-shadow: 10px 10px 10px  black ;
+            }
+        .hr {
+          height: 5px;
+          background: rgba(240, 86, 63, 1)
+        }
     </style>
 </head>
 <body>
     <h1>Suleyman ProPic</h1>
-    <h2>Hi Guys, I'am MKLOP PROGRAMMER Known as Suleyman Muktar,  <br>You can Contact me with my Telegram account, Click On The Image Below To see My Telegram Account.</h2>
+    <h2>Hi Guys, I'am MKLOP PROGRAMMER Known as Suleyman Muktar,  <br>You can Contact me with my Telegram account</h2>
    <fieldset> <h2>I am </h2>
     <ul>  
         <li>Web Developer</li>  
         <li>AI Developer</li>  
         <li>Apk Modder</li>  
-        <li>Software Enginer</li>  </fieldset>
+        <li>Software Enginer (beginner)  </li>  <br> <b><h3>So You Can Contact Me By My Telegram Account If You Want My Help : )</h3></b></fieldset>
     </ul>  
     <fieldset style="width: 150px">
         <legend><strong>My picture</strong></legend>
@@ -123,6 +140,7 @@ This is me Suleyman Muktar </b>
             // When the button is clicked, toggle the visibility of the dropdown content
             document.querySelector(".dropdown-content").classList.toggle("show");
         });
-    </script>
+    </script><hr class="hr">
+    <input class="made" type="button" value="Made With MKLOP" onclick="alert('Hey Guys, My Name is Suleyman Muktar Duruy   I am 15.5 years old and I am Grade 8th  Student')">
 </body>
 </html>
